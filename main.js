@@ -39,5 +39,5 @@ function(clazz, events) {
   var exports = {}
   exports.WebSocket = WS;
   
-  return WS;
+  return exports;
 });
