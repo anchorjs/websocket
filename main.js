@@ -1,5 +1,5 @@
-define(['anchor/class',
-        'anchor/events'],
+define(['class',
+        'events'],
 function(clazz, events) {
   
   function WS(url, callback) {
