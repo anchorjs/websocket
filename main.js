@@ -1,12 +1,13 @@
-define(['class',
-        'events'],
-function(clazz, events) {
+define(['exports', 'module',
+        'events',
+        'class'],
+function(exports, module, Emitter, clazz) {
   
-  function WS(url, callback) {
-    events.EventEmitter.call(this);
+  function WebSocket(url, callback) {
+    Emitter.call(this);
     
     var self = this
-      , ws = new WebSocket(url);
+      , ws = new global.WebSocket(url);
     ws.onopen = function(e) {
       self.emit('open');
     };
@@ -25,19 +26,17 @@ function(clazz, events) {
     if (callback) this.on('open', callback);
     this._ws = ws;
   }
-  clazz.inherits(WS, events.EventEmitter);
+  clazz.inherits(WebSocket, Emitter);
   
-  WS.prototype.send = function(data) {
+  WebSocket.prototype.send = function(data) {
     this._ws.send(data);
   }
   
-  WS.prototype.close = function() {
+  WebSocket.prototype.close = function() {
     this._ws.close();
   }
   
   
-  var exports = {}
-  exports.WebSocket = WS;
-  
-  return exports;
+  exports = module.exports = WebSocket;
+  exports.WebSocket = WebSocket;
 });
