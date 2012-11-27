@@ -20,7 +20,7 @@
       "url": "http://www.opensource.org/licenses/MIT"
     }
   ],
-  "main": "websocket",
+  "main": "main",
   "volo": {
     "baseUrl": "vendor",
     "dependencies": {
