@@ -1,4 +1,4 @@
-define(['websocket/websocket',
+define(['websocket',
         'chai'],
 function(websocket, chai) {
   var expect = chai.expect;

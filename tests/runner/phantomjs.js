@@ -1,12 +1,14 @@
 require.config({
   paths:{
-    'websocket': '../../',
     'class': '../../vendor/class',
-    'events': '../../vendor/events',
     'mocha': '../vendor/mocha/mocha',
     'chai': '../vendor/chai/chai',
-    'phantomjs-mocha': '../vendor/phantomjs-mocha'
-  }
+  },
+  packages: [
+    { name: 'events', location: '../../vendor/events' },
+    { name: 'websocket', location: '../..' },
+    { name: 'phantomjs-mocha', location: '../vendor/phantomjs-mocha' },
+  ]
 });
 
 require(['require',
