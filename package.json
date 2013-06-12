@@ -21,6 +21,20 @@
     }
   ],
   "main": "main",
+  "dependencies": {
+    "class": "git://github.com/anchorjs/class.git",
+  },
+  "devDependencies": {
+    "express": "3.x.x",
+    "term-canvas": "0.0.x",
+    "mocha-phantomjs": "2.x.x",
+    "mocha-cloud": "0.1.x",
+    "mocha-cloud-grid-view": "0.0.x",
+    "deamdify": "0.1.x"
+  },
+  "browserify": {
+    "transform": "deamdify"
+  },
   "volo": {
     "baseUrl": "vendor",
     "dependencies": {
