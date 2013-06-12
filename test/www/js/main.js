@@ -6,7 +6,8 @@ require.config({
     'chai': 'chai/chai'
   },
   packages: [
-    { name: 'websocket', location: '../../../..', main: 'main' }
+    { name: 'websocket', location: '../../../..', main: 'main' },
+    { name: 'events' }
   ],
   shim: {
     'mocha': {

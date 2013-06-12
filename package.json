@@ -22,7 +22,7 @@
   ],
   "main": "main",
   "dependencies": {
-    "class": "git://github.com/anchorjs/class.git",
+    "class": "git://github.com/anchorjs/class.git"
   },
   "devDependencies": {
     "express": "3.x.x",
