@@ -1,7 +1,5 @@
-define(['websocket',
-        'chai'],
-function(websocket, chai) {
-  var expect = chai.expect;
+define(['websocket'],
+function(websocket) {
 
   describe("websocket", function() {
     
