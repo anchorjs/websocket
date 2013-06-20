@@ -1,0 +1,16 @@
+{
+  "name": "websocket",
+  "version": "0.0.0",
+  "description": "Full-duplex communication using WebSocket.",
+  "repo": "anchorjs/websocket",
+  "main": "main.js",
+  "scripts": [
+    "main.js",
+    "lib/websocket.js",
+  ],
+  "dependencies": {
+    "anchorjs/class": "*",
+    "anchorjs/events": "*"
+  },
+  "license": "MIT"
+}

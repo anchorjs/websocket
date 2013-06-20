@@ -1,7 +1,7 @@
 {
   "name": "websocket",
   "version": "0.0.0",
-  "description": "WebSocket module for Anchor.js.",
+  "description": "Full-duplex communication using WebSocket.",
   "repository": {
     "type": "git",
     "url": "git://github.com/anchorjs/websocket.git"
