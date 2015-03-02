@@ -1,0 +1,29 @@
+{
+  "name": "websocket",
+  "version": "0.0.0",
+  "description": "Full-duplex communication using WebSocket.",
+  "authors": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "homepage": "http://www.jaredhanson.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anchorjs/websocket.git"
+  },
+  "license": "MIT",
+  "main": "main.js",
+  "dependencies": {
+    "class": "git://github.com/anchorjs/class.git#master",
+    "events": "git://github.com/anchorjs/events.git#master"
+  },
+  "ignore": [
+    ".gitignore",
+    ".jshintrc",
+    "Makefile",
+    "README.md",
+    "component.json",
+    "package.json",
+    "test"
+  ]
+}
